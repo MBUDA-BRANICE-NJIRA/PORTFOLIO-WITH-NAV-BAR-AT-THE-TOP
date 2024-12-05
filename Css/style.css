@@ -88,3 +88,42 @@ span{
     display: none;
 }
 
+
+section{
+    padding: 100px 10%;
+
+}
+
+
+/* Page home page layout styling */
+.home{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 4rem;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{
+     font-size: var(--big-font);
+     font-weight: 600;
+
+}
+
+.change-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.change-text {
+
+    
+}
+
