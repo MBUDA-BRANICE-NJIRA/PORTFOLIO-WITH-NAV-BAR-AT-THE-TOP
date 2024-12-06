@@ -14,4 +14,24 @@ let currentWordIndex = 0;
 let maxWordIndex = words.length -1;
 words[currentWordIndex].style.opacity = "1";
 
-let change
+let changeText = () => {
+    let currentWord =  words[currentWordIndex];
+    let nexWord = currentWordIndex ===maxWordIndex ? words[0] : words[currentWordIndex + 1];
+
+    Array.from(currentWord.children).forEach((letter,i) => {
+         setTimeout(() => {
+       letter.className = "letter out";
+         }, i * 80 );
+    }) ;
+    nextWord.style.opacity = "1";
+    Array.from(nextWord.children).forEach((letter, i) => {
+        letter.className = "letter behind";
+        setTimeout(() => {
+            letter.className = "letter in";
+        } ,340 + i * 80);
+        });
+        currentWordIndex = currentWordIndex === maxWordIndex + 1;
+    };
+
+    changeText();
+    setInterval(changeText , 3000);
