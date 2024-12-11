@@ -1,11 +1,15 @@
+
+
+
+
 let words = document.querySelectorAll(".word");
 words.forEach((word) => {
     let letters = word.textContent.split("");
     word.textContent = "";
     letters.forEach((letter) => {
         let  span = document.createElement("span");
-        span.textContent = letters;
-        span.className = "letters";
+        span.textContent = letter;
+        span.className = "letter";
         word.append(span);
     })
 });
@@ -16,13 +20,14 @@ words[currentWordIndex].style.opacity = "1";
 
 let changeText = () => {
     let currentWord =  words[currentWordIndex];
-    let nexWord = currentWordIndex ===maxWordIndex ? words[0] : words[currentWordIndex + 1];
+    let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
 
     Array.from(currentWord.children).forEach((letter,i) => {
          setTimeout(() => {
        letter.className = "letter out";
          }, i * 80 );
     }) ;
+    
     nextWord.style.opacity = "1";
     Array.from(nextWord.children).forEach((letter, i) => {
         letter.className = "letter behind";

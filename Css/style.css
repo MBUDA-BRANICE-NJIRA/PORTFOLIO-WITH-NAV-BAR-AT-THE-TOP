@@ -34,6 +34,7 @@ body{
     font-family: "Poppins", sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+    background: radial-gradient(#12f7ff);
 }
 
 header{
@@ -88,6 +89,7 @@ span{
     display: none;
 }
 
+/* BEGIINING OF HOME  SECTION */
 
 section{
     padding: 100px 10%;
@@ -103,7 +105,7 @@ section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    grid-gap: 4rem;
+    grid-gap: 4em;
 }
 
 .home-content{
@@ -112,7 +114,7 @@ section{
 
 .home-content h1{
      font-size: var(--big-font);
-     font-weight: 600;
+     font-weight: 700;
 
 }
 
@@ -142,7 +144,7 @@ section{
 
 .change-text h3 .word .letter.out{
     transform: rotate(90deg);
-    transition: 0.32s cubic-bezier(0.6,0.7,0.2);
+    transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
 }
 
 .change-text h3 .word .letter .in{
@@ -159,7 +161,7 @@ section{
     line-height: 1.6;
 }
 
-.info-box{
+.Info-box{
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -167,7 +169,7 @@ section{
     margin: 1rem 0 2rem;
 }
 
-.info-box h5{
+.Info-box h5{
     font-weight: 600;
     color: var(--text-color);
     font-size: 1rem;
@@ -291,3 +293,23 @@ a.btn:nth-child(2)::before{
     width: 100%;
 }
 
+/* IMAGE SECTION */
+.home-image{
+    position: relative;
+}
+
+.img-box{
+    text-align: center;
+}
+
+.img-box img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+
+.liquid-shape{
+    display: flex;
+    align-items: center;
+}
