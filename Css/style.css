@@ -143,16 +143,18 @@ section{
 }
 
 .change-text h3 .word .letter.out{
-    transform: rotate(90deg);
+    transform: rotateX(90deg);
     transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
 }
 
 .change-text h3 .word .letter .in{
     transition: 0.38s ease;
 }
+
 .change-text h3 .word .letter .behind{
     transform: rotateX('-90deg');
 }
+
 
 /* Product desigh section css */
 
@@ -200,6 +202,8 @@ section{
     letter-spacing: 1px;
     font-weight: 600;
     transition: .6s;
+    box-shadow: var(--neon-box-shadow);
+    border-radius: 5px;
     box-shadow: 5px;
     position: relative;overflow: hidden;
     z-index: 1;
@@ -231,7 +235,7 @@ a.btn:nth-child(2){
 
 }
 
-a.btn:nth-child(2):hover{
+a.btn:nth-child(2):before{
     color: var(--bg-color);
 }
 
