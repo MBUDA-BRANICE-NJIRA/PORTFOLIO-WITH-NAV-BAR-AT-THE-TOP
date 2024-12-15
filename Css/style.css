@@ -384,10 +384,21 @@ info-about3{
        animation: morph 6s linear infinite;
 }
 
-info-about1{
+.info-about1{
     left: 10px;
     top: 34%;
 }
+
+.info-about2{
+   left: 66%;
+   top: 15%;
+}
+
+.info-about3{
+    left: 61%;
+    top: 70%;
+}
+
 
 
 
