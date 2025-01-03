@@ -137,7 +137,7 @@ section{
     opacity: 0;
 }
 
-/* this is the css that contributs */
+/* this is the css that contributs to change in h3 styling */
 .change-text h3 .word .letter{
     transform-origin: center center 25px;
 }
@@ -171,7 +171,7 @@ section{
     margin: 1rem 0 2rem;
 }
 
-.Info-box h5{
+.info-box h5{
     font-weight: 600;
     color: var(--text-color);
     font-size: 1rem;
@@ -289,7 +289,7 @@ a.btn:nth-child(2)::before{
     height: 100%;
     background: var(--hover-color);
     transition: .6s;
-    z-index: 1;
+    z-index: -1;
 
 }
 
@@ -313,10 +313,15 @@ a.btn:nth-child(2)::before{
 }
 
 
-.liquid-shape{
-    display: flex;
-    align-items: center;
-}
+/* .liquid-shape{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 10%;
+    /* display: flex;
+    align-items: center; */
+} */
 
 
 /* About section css--------------------------------------------------------- */
